@@ -15,3 +15,5 @@ Este documento detalla la estructura visual de la app.
 - Iteration 6: Refinamiento de padding, tipografia y colores OLED.
 
 - Iteration 7: Refinamiento de padding, tipografia y colores OLED.
+
+- Iteration 8: Refinamiento de padding, tipografia y colores OLED.
