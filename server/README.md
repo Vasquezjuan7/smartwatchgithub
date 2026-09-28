@@ -13,3 +13,5 @@ Servidor Node.js intermediario para comunicar Wear OS con GitHub API.
 - Backend phase 5: Mejora en el parseo de JSON y manejo de errores de red.
 
 - Backend phase 6: Mejora en el parseo de JSON y manejo de errores de red.
+
+- Backend phase 7: Mejora en el parseo de JSON y manejo de errores de red.
