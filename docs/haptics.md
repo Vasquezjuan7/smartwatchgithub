@@ -17,3 +17,5 @@ Guia de retroalimentacion tactil y flujo de estados en Compose.
 - UX Polish 7: Ajuste de vibraciones (LongPress/Click) y animaciones de carga.
 
 - UX Polish 8: Ajuste de vibraciones (LongPress/Click) y animaciones de carga.
+
+- UX Polish 9: Ajuste de vibraciones (LongPress/Click) y animaciones de carga.
