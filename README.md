@@ -9,3 +9,4 @@ Herramienta DevOps de bolsillo para Wear OS que permite aprobar o rechazar Pull 
 - Backend en Node.js
 - Feedback Haptico
 
+
