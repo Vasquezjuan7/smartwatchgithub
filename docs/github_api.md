@@ -1,21 +1,12 @@
-# GitHub API Integration Flow
+# GitHub REST API Integration
 
-Documentacion sobre la conexion a la API de GitHub.
+El cliente nativo de Android interactua directamente con la API REST v3 de GitHub:
+- \GET /user\: Obtiene el usuario autenticado.
+- \GET /user/repos\: Lista repositorios ordenados por actividad reciente (\ffiliation=owner,collaborator,organization_member\).
+- \GET /repos/{owner}/{repo}/pulls\: Obtiene los Pull Requests abiertos.
+- \PUT /repos/{owner}/{repo}/pulls/{number}/merge\: Fusiona un PR con commit firmado desde el reloj.
+- \PATCH /repos/{owner}/{repo}/pulls/{number}\: Cierra un PR rechazado.
 
-- API Integration step 1: Estrategias de rescate de JSON y Query Strings.
-
-- API Integration step 2: Estrategias de rescate de JSON y Query Strings.
-
-- API Integration step 3: Estrategias de rescate de JSON y Query Strings.
-
-- API Integration step 4: Estrategias de rescate de JSON y Query Strings.
-
-- API Integration step 5: Estrategias de rescate de JSON y Query Strings.
-
-- API Integration step 6: Estrategias de rescate de JSON y Query Strings.
-
-- API Integration step 7: Estrategias de rescate de JSON y Query Strings.
-
-- API Integration step 8: Estrategias de rescate de JSON y Query Strings.
-
-- API Integration step 9: Estrategias de rescate de JSON y Query Strings.
+### Optimizaciones de Red
+- Control de concurrencia mediante \Semaphore(6)\ para no saturar la red ni la tasa de peticiones de GitHub.
+- Omision de repositorios sin \open_issues_count\ para reducir peticiones innecesarias.
