@@ -1,21 +1,9 @@
-# UI Design Guidelines
+# Aurora Design System for Wear OS
 
-Este documento detalla la estructura visual de la app.
+Sistema de diseño visual optimizado especificamente para pantallas OLED circulares de smartwatches:
 
-- Iteration 1: Refinamiento de padding, tipografia y colores OLED.
-
-- Iteration 2: Refinamiento de padding, tipografia y colores OLED.
-
-- Iteration 3: Refinamiento de padding, tipografia y colores OLED.
-
-- Iteration 4: Refinamiento de padding, tipografia y colores OLED.
-
-- Iteration 5: Refinamiento de padding, tipografia y colores OLED.
-
-- Iteration 6: Refinamiento de padding, tipografia y colores OLED.
-
-- Iteration 7: Refinamiento de padding, tipografia y colores OLED.
-
-- Iteration 8: Refinamiento de padding, tipografia y colores OLED.
-
-- Iteration 9: Refinamiento de padding, tipografia y colores OLED.
+## Principios
+1. **OLED Pitch Black (#000000)**: Fondo negro puro para consumo minimo de bateria en paneles AMOLED.
+2. **Auroras Orbitales**: Tres gradientes radiales animados que orbitan suavemente en Canvas; el color muta dinamicamente segun la accion (verde para merge, rojo para cierre).
+3. **Glassmorphism**: Tarjetas con fondos translucidos (\lpha = 0.55\) y bordes luminosos que delimitan contenido sin saturar.
+4. **Microinteracciones Visuales**: Explosiones de particulas al completar acciones con exito y rebotes hapticos.
