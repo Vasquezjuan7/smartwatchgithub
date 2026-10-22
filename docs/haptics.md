@@ -1,23 +1,13 @@
-# Wear OS Haptics & UX
+# Wear OS Haptics & Safety Controls
 
-Guia de retroalimentacion tactil y flujo de estados en Compose.
+Guia de diseno de retroalimentacion tactil para operaciones DevOps criticas en smartwatches:
 
-- UX Polish 1: Ajuste de vibraciones (LongPress/Click) y animaciones de carga.
+## Prevencion de Acciones Accidentales
+- En una pantalla tactil de reloj de 1.4 pulgadas, un toque accidental podria desplegar codigo a produccion.
+- Solucion: **Boton Mantener Pulsado (Hold-to-Confirm)** con anillo radial que se llena durante 1.8 segundos.
+- Si el usuario levanta el dedo antes de completar el circulo, la accion se cancela inmediatamente.
 
-- UX Polish 2: Ajuste de vibraciones (LongPress/Click) y animaciones de carga.
-
-- UX Polish 3: Ajuste de vibraciones (LongPress/Click) y animaciones de carga.
-
-- UX Polish 4: Ajuste de vibraciones (LongPress/Click) y animaciones de carga.
-
-- UX Polish 5: Ajuste de vibraciones (LongPress/Click) y animaciones de carga.
-
-- UX Polish 6: Ajuste de vibraciones (LongPress/Click) y animaciones de carga.
-
-- UX Polish 7: Ajuste de vibraciones (LongPress/Click) y animaciones de carga.
-
-- UX Polish 8: Ajuste de vibraciones (LongPress/Click) y animaciones de carga.
-
-- UX Polish 9: Ajuste de vibraciones (LongPress/Click) y animaciones de carga.
-
-- UX Polish 10: Ajuste de vibraciones (LongPress/Click) y animaciones de carga.
+## Patrones de Vibracion Haptica
+- **Tick continuo**: Retroalimentacion tactil leve mientras se mantiene pulsado el anillo.
+- **Confirmacion Exitosa**: Doble pulso haptico firme al completar el merge.
+- **Rechazo / Error**: Vibracion en patron de sacudida (shake) indicando advertencia.
