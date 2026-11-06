@@ -7,7 +7,7 @@ Herramienta DevOps de bolsillo para Wear OS que permite aprobar o rechazar Pull 
 - Wear OS Compose Material 3
 - Integracion con GitHub API
 - Backend en Node.js
-- Feedback Haptico
+- Feedback Haptico 
 
 
 
