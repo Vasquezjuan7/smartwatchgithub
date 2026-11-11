@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Icono pequeño de notificación (silueta del logo). -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp" android:height="24dp"
+    android:viewportWidth="64" android:viewportHeight="64">
+    <group android:translateX="-22" android:translateY="-22">
+    <path android:pathData="M54,24 A30,30 0 1,1 24,54" android:strokeWidth="4" android:strokeColor="#FFFFFFFF" android:strokeLineCap="round" android:fillColor="#00000000" />
+    <path android:pathData="M24,54 m-3.6,0 a3.6,3.6 0 1,0 7.2,0 a3.6,3.6 0 1,0 -7.2,0" android:fillColor="#FFFFFFFF" />
+    <path android:pathData="M46,42 L46,66 M64,46 C64,56 46,52 46,60" android:strokeWidth="4.6" android:strokeColor="#FFFFFFFF" android:strokeLineCap="round" android:fillColor="#00000000" />
+    <path android:pathData="M46,42 m-5,0 a5,5 0 1,0 10,0 a5,5 0 1,0 -10,0" android:fillColor="#FFFFFFFF" />
+    <path android:pathData="M46,66 m-5,0 a5,5 0 1,0 10,0 a5,5 0 1,0 -10,0" android:fillColor="#FFFFFFFF" />
+    <path android:pathData="M64,46 m-5.6,0 a5.6,5.6 0 1,0 11.2,0 a5.6,5.6 0 1,0 -11.2,0" android:fillColor="#FFFFFFFF" />
+    </group>
+</vector>
