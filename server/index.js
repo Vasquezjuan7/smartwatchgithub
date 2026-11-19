@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const axios = require('axios');
 
@@ -8,11 +9,10 @@ app.use(express.json());
 app.use(express.text());
 app.use(express.urlencoded({ extended: true }));
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
-// Tu Token de GitHub (NUNCA SUBAS EL TOKEN REAL AL REPOSITORIO DE GITHUB)
-// Para que esto funcione, crea un archivo .env o simplemente pégalo aquí temporalmente.
-const GITHUB_TOKEN = 'ghp_PegaAquiTuTokenParaProbar_PeroNoLoSubas';
+// Tu Token de GitHub ahora se lee desde el archivo .env de forma segura
+const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
 const REPO_OWNER = 'Vasquezjuan7';
 const REPO_NAME = 'smartwatchgithub';
 
@@ -40,6 +40,11 @@ app.post('/api/decision', async (req, res) => {
     }
 
     console.log(`[Reloj -> Servidor] Decisión: ${action.toUpperCase()} para el PR #${pr_number}`);
+
+    if (!GITHUB_TOKEN) {
+        console.error("❌ ERROR: No se encontró GITHUB_TOKEN en el archivo .env");
+        return res.status(500).json({ error: "Falta configuración en el servidor" });
+    }
 
     try {
         if (action === 'merge') {
